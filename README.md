@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# L&G Directa - Site Institucional
 
-## Getting Started
+![L&G Directa](public/logo.png)
 
-First, run the development server:
+## Sobre o Projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Este é o site institucional da L&G Directa, uma consultoria especializada em governança corporativa, planejamento estratégico e inteligência de negócios. O site foi desenvolvido com tecnologias modernas para apresentar os serviços e a equipe da empresa de forma profissional e atraente.
+
+## Tecnologias Utilizadas
+
+- **Next.js 14**: Framework React para desenvolvimento web
+- **TypeScript**: Linguagem de programação tipada
+- **Tailwind CSS**: Framework CSS para estilização
+- **Framer Motion**: Biblioteca para animações
+- **Lucide Icons**: Conjunto de ícones modernos
+- **Embla Carousel**: Biblioteca para carrosséis
+
+## Características
+
+- Design responsivo para todos os dispositivos
+- Animações suaves e interativas
+- Interface moderna e profissional
+- Navegação intuitiva
+- Formulário de contato funcional
+- Carrossel de imagens na seção principal
+
+## Estrutura do Projeto
+
+```
+directa-lg/
+├── app/
+│   ├── components/       # Componentes React
+│   ├── lib/              # Utilitários e funções auxiliares
+│   ├── globals.css       # Estilos globais
+│   ├── layout.tsx        # Layout principal
+│   └── page.tsx          # Página inicial
+├── public/               # Arquivos estáticos
+└── tailwind.config.ts    # Configuração do Tailwind CSS
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instalação e Execução
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/directa-lg.git
+   cd directa-lg
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. Execute o projeto em modo de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Acesse o site em [http://localhost:3000](http://localhost:3000)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Construção para Produção
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Para criar uma versão otimizada para produção:
 
-## Deploy on Vercel
+```bash
+npm run build
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contribuição
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
+
+## Contato
+
+Para mais informações sobre a L&G Directa, entre em contato através do site ou diretamente com a equipe.
