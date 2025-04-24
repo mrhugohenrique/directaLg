@@ -1,26 +1,88 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 60 33% 99%;
+    --foreground: 0 0% 23%;
+
+    --muted: 44 29% 90%;
+    --muted-foreground: 0 0% 23%;
+
+    --popover: 60 33% 99%;
+    --popover-foreground: 0 0% 23%;
+
+    --card: 60 33% 99%;
+    --card-foreground: 0 0% 23%;
+
+    --border: 44 29% 90%;
+    --input: 44 29% 90%;
+
+    --primary: 0 0% 23%;
+    --primary-foreground: 60 33% 99%;
+
+    --secondary: 44 29% 90%;
+    --secondary-foreground: 0 0% 23%;
+
+    --accent: 44 29% 90%;
+    --accent-foreground: 0 0% 23%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 33% 99%;
+
+    --ring: 0 0% 23%;
+
+    --radius: 0.75rem;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+/* Estilos adicionais para os cards de serviços */
+.card-content {
+  transition: max-height 0.3s ease-in-out;
+}
+
+.card.expanded .card-content {
+  max-height: 200px;
+}
+
+/* Estilos para o carrossel Embla */
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+/* Estilos globais adicionais */
+.section-rounded {
+  @apply rounded-3xl;
+}
+
+.gradient-bg {
+  @apply bg-gradient-to-br from-background-warm via-background-warm to-background-warm-dark;
+}
+
+.hover-shadow {
+  @apply transition-shadow duration-300 hover:shadow-lg;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-dark to-brand-medium;
 }

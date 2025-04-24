@@ -1,7 +1,5 @@
 # L&G Directa - Site Institucional
 
-![L&G Directa](public/logo.png)
-
 ## Sobre o Projeto
 
 Este é o site institucional da L&G Directa, uma consultoria especializada em governança corporativa, planejamento estratégico e inteligência de negócios. O site foi desenvolvido com tecnologias modernas para apresentar os serviços e a equipe da empresa de forma profissional e atraente.
@@ -67,14 +65,6 @@ npm run build
 npm start
 ```
 
-## Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
-
 ## Licença
 
 Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
-
-## Contato
-
-Para mais informações sobre a L&G Directa, entre em contato através do site ou diretamente com a equipe.
